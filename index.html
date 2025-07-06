@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h1>KANISHKA SHARMA</h1>
+        <p id ="bio">"Hi, I'm Kanishka Sharma, a second-year Information Technology student at SGSITS, Indore. Passionate about coding and problem-solving, I'm eager to explore new technologies and enhance my skills in web development and programming." </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li class="skill_logo">HTML <img class = "logo" src ="html.png" alt="error"></li> 
+            <li class="skill_logo">CSS <img class = "logo" src ="css.png" alt="error"></li> 
+            <li class="skill_logo">Javascript <img class = "logo" src ="js.png" alt="error"></li> 
+            <li class="skill_logo">JAVA <img class = "logo" src ="java.png" alt="error"></li> 
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>LANDING PAGE</h3>
+                <p class="project_bio">I created a landing page for a website using html and css.</p>
+            </div>
+            <div class="project">
+                <img src="clone.png" alt="Project 2">
+                <h3 id="clone">AMAZON CLONE</h3>
+                <p class="project_bio">I created a clone of amazon website using html and css.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+<br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+<br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

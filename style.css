@@ -1,0 +1,251 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #222;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f77f00;
+    border-radius: 5px;
+}
+
+/* Profile Section */
+#profile {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+}
+
+#profile img {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#profile h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+#skills h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f77f00;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+}
+
+#skills li {
+    background-color: #b491b1;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #fcb69f, #ffecd2);
+}
+
+#portfolio h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f77f00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border: 2px solid #f77f00;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #f77f00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Center the skill items */
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 150px;
+    padding: 0;
+}
+
+/* Skill box styling */
+.skill_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: #333;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 160px;
+}
+
+/* Add hover effect */
+.skill_logo:hover {
+    transform: scale(1.1);
+}
+
+/* Adjust skill image size */
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+
+#bio{
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 140px;
+    margin-right:140px;
+}
+
+#clone{
+    margin-top:50px;
+}
+
+.project_bio{
+    font-size: 20px;
+    font-weight: 400;
+}
